@@ -1,9 +1,11 @@
-root {
-    --grey: #595959;
-    --white: #FFFFFF;
-    --black: #000000;
-    --cream: #FFFFED;
-  }
+:root {
+  --grey: #595959;
+  --white: #FFFFFF;
+  --black: #000000;
+  --cream: #FFFFED;
+  --green: #00AA55;   /* example */
+  --blue: #0077CC;    /* example */
+}
 
 body{
     background: var(--bg);
