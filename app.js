@@ -1,17 +1,30 @@
 'use strict';
-const switcher = document.querySelector('.btn');
-switcher.addEventListener('click', function(){
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
-    document.body.classList.toggle('random-theme');
 
-    const className = document.body.className;
-    if(className == "light-theme"){
+const themes = ['light-theme', 'dark-theme', 'random-theme'];
+let currentTheme = 0;
+
+const switcher = document.querySelector('.btn');
+
+switcher.addEventListener('click', function () {
+    // Remove current theme
+    document.body.classList.remove(themes[currentTheme]);
+
+    // Update theme index
+    currentTheme = (currentTheme + 1) % themes.length;
+
+    // Apply new theme
+    const newTheme = themes[currentTheme];
+    document.body.classList.add(newTheme);
+
+    // Update button text
+    if (newTheme === 'light-theme') {
         this.textContent = "Dark";
-    } else if (className == "dark-theme") {
+    } else if (newTheme === 'dark-theme') {
         this.textContent = "Random";
     } else {
-        this.textContent= "Light";
+        this.textContent = "Light";
+    }
 
-    console.log('current class name: ' + className);
+    console.log('Current theme:', newTheme);
 });
+
