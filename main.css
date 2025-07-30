@@ -3,9 +3,16 @@
   --white: #FFFFFF;
   --black: #000000;
   --cream: #FFFFED;
-  --green: #00AA55;   /* example */
-  --blue: #0077CC;    /* example */
+  --green: #00AA55;
+  --blue: #0077CC;
+
+  /* Defaults (light-theme) */
+  --bg: var(--cream);
+  --fontColor: var(--black);
+  --btnBg: var(--grey);
+  --btnFontColor: var(--white);
 }
+
 
 body{
     background: var(--bg);
