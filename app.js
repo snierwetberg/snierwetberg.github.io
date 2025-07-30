@@ -20,7 +20,7 @@ switcher.addEventListener('click', function () {
     if (newTheme === 'light-theme') {
         this.textContent = "Dark";
     } else if (newTheme === 'dark-theme') {
-        this.textContent = "Random";
+        this.textContent = "Fun";
     } else {
         this.textContent = "Light";
     }
