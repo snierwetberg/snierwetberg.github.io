@@ -1,4 +1,4 @@
-:root {
+root {
     --grey: #595959;
     --white: #FFFFFF;
     --black: #000000;
@@ -24,6 +24,13 @@ li {
     --fontColor: var(--black);
     --btnBg:var(--grey);
     --btnFontColor:var(--white);
+}
+
+.random-theme{
+    --bg: var(--green);
+    --fontColor: var(--white);
+    --btnBg: var(--blue);
+    --btnFontColor: var(--white);
 }
 
 .dark-theme {
