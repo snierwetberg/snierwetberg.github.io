@@ -14,10 +14,11 @@
 }
 
 
-body{
-    background: var(--bg);
-    color: var(--fontColor);
-    font-family: helvetica;
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: Helvetica, sans-serif;
+  transition: all 0.3s ease;
 }
 
 li {
@@ -29,34 +30,35 @@ li {
 }
 
 .light-theme {
-    --bg: var(--cream);
-    --fontColor: var(--black);
-    --btnBg:var(--grey);
-    --btnFontColor:var(--white);
-}
-
-.random-theme{
-    --bg: var(--green);
-    --fontColor: var(--white);
-    --btnBg: var(--blue);
-    --btnFontColor: var(--white);
+  --bg: var(--cream);
+  --fontColor: var(--black);
+  --btnBg: var(--grey);
+  --btnFontColor: var(--white);
 }
 
 .dark-theme {
-    --bg: var(--grey);
-    --fontColor: var(--white);
-    --btnBg: var(--cream);
-    --btnFontColor:var(--black);
+  --bg: var(--grey);
+  --fontColor: var(--white);
+  --btnBg: var(--cream);
+  --btnFontColor: var(--black);
 }
 
-.btn{
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+.random-theme {
+  --bg: var(--green);
+  --fontColor: var(--white);
+  --btnBg: var(--blue);
+  --btnFontColor: var(--white);
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  transition: all 0.3s ease;
 }
